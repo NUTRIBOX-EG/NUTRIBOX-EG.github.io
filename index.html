@@ -1,6 +1,12 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>NutriBox Links</title>
 <style>
   :root{
+    color-scheme: light only;
     --bg:#F5F8F1;
     --bg-2:#EDF3E6;
     --surface:#FFFFFF;
@@ -17,51 +23,27 @@
     --ig-c:#8134AF;
     --wa:#25D366;
   }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#12140F;
-      --bg-2:#171A12;
-      --surface:#1C2017;
-      --ink:#EFF3E9;
-      --ink-soft:#A6AE9B;
-      --green:#6CC14A;
-      --green-deep:#8AD860;
-      --green-light:#9ADE66;
-      --border:rgba(239,243,233,0.10);
-      --shadow:0 1px 2px rgba(0,0,0,0.4), 0 20px 40px -16px rgba(0,0,0,0.6);
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg:#12140F;
-    --bg-2:#171A12;
-    --surface:#1C2017;
-    --ink:#EFF3E9;
-    --ink-soft:#A6AE9B;
-    --green:#6CC14A;
-    --green-deep:#8AD860;
-    --green-light:#9ADE66;
-    --border:rgba(239,243,233,0.10);
-    --shadow:0 1px 2px rgba(0,0,0,0.4), 0 20px 40px -16px rgba(0,0,0,0.6);
-  }
 
   *{box-sizing:border-box;}
+  html,body{ background:#FFFFFF; }
   body{
     margin:0;
-    min-height:100%;
+    min-height:100vh;
     background:
-      radial-gradient(720px 420px at 15% -10%, var(--bg-2), transparent 60%),
-      radial-gradient(600px 380px at 110% 10%, var(--bg-2), transparent 55%),
+      radial-gradient(900px 520px at 15% -10%, var(--bg-2), transparent 60%),
+      radial-gradient(760px 480px at 110% 10%, var(--bg-2), transparent 55%),
       var(--bg);
     color:var(--ink);
     font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Tahoma,sans-serif;
+    font-size:17px;
     display:flex;
     justify-content:center;
-    padding-block: 48px 40px;
+    padding-block: 56px 48px;
   }
   .wrap{
     width:100%;
-    max-width:440px;
-    padding-inline:20px;
+    max-width:480px;
+    padding-inline:24px;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -69,7 +51,7 @@
 
   .leafmark{
     position:relative;
-    width:96px;height:96px;
+    width:116px;height:116px;
     display:flex;align-items:center;justify-content:center;
   }
   .leafmark img{
@@ -80,57 +62,57 @@
   h1.name{
     font-family:'Poppins','Inter',sans-serif;
     font-weight:600;
-    font-size:26px;
+    font-size:32px;
     letter-spacing:0.2px;
-    margin:18px 0 4px;
+    margin:22px 0 6px;
     display:flex; align-items:baseline; gap:2px;
   }
   h1.name .nutri{color:var(--green);}
   h1.name .box{color:var(--ink);}
 
   p.tagline{
-    margin:0 0 6px;
-    font-size:14.5px;
+    margin:0 0 8px;
+    font-size:17px;
     color:var(--ink-soft);
     text-align:center;
-    line-height:1.6;
-    max-width:320px;
+    line-height:1.65;
+    max-width:360px;
   }
 
   .pill{
-    margin-top:6px;
+    margin-top:10px;
     display:inline-flex;
     align-items:center;
-    gap:6px;
-    font-size:11.5px;
+    gap:7px;
+    font-size:14px;
     font-weight:600;
     letter-spacing:0.3px;
     color:var(--green-deep);
     background:color-mix(in srgb, var(--green) 14%, transparent);
     border:1px solid color-mix(in srgb, var(--green) 30%, transparent);
-    padding:5px 12px;
+    padding:7px 16px;
     border-radius:999px;
   }
-  .pill svg{width:12px;height:12px;flex:none;}
+  .pill svg{width:14px;height:14px;flex:none;}
 
   .links{
     width:100%;
     display:flex;
     flex-direction:column;
-    gap:14px;
-    margin-top:30px;
+    gap:16px;
+    margin-top:36px;
   }
 
   a.linkbtn{
     position:relative;
     display:flex;
     align-items:center;
-    gap:14px;
+    gap:16px;
     width:100%;
-    padding:16px 18px;
+    padding:19px 22px;
     background:var(--surface);
     border:1px solid var(--border);
-    border-radius:16px;
+    border-radius:18px;
     box-shadow:var(--shadow);
     text-decoration:none;
     color:var(--ink);
@@ -141,7 +123,7 @@
   a.linkbtn:hover{ border-color:color-mix(in srgb, var(--green) 45%, var(--border)); }
 
   a.linkbtn .rail{
-    position:absolute; inset-block:0; inset-inline-start:0; width:4px;
+    position:absolute; inset-block:0; inset-inline-start:0; width:5px;
   }
   .rail-fb{background:var(--fb);}
   .rail-ig{background:linear-gradient(180deg,var(--ig-a),var(--ig-b),var(--ig-c));}
@@ -149,30 +131,30 @@
 
   .icon{
     flex:none;
-    width:44px;height:44px;
-    border-radius:12px;
+    width:52px;height:52px;
+    border-radius:14px;
     display:flex;align-items:center;justify-content:center;
     color:#fff;
   }
-  .icon svg{width:22px;height:22px;}
+  .icon svg{width:26px;height:26px;}
   .icon-fb{background:var(--fb);}
   .icon-ig{background:linear-gradient(135deg,var(--ig-a),var(--ig-b),var(--ig-c));}
   .icon-wa{background:var(--wa);}
 
-  .linktext{ display:flex; flex-direction:column; gap:2px; flex:1; min-width:0;}
-  .linktext .t1{font-weight:600; font-size:15.5px;}
-  .linktext .t2{font-size:12.5px; color:var(--ink-soft); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .linktext{ display:flex; flex-direction:column; gap:3px; flex:1; min-width:0;}
+  .linktext .t1{font-weight:600; font-size:18px;}
+  .linktext .t2{font-size:14.5px; color:var(--ink-soft); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 
   .go{ flex:none; color:var(--ink-soft); opacity:.55; }
-  .go svg{width:16px;height:16px;}
+  .go svg{width:19px;height:19px;}
   [dir="rtl"] .go svg{ transform:scaleX(-1); }
 
   .divider{
     width:100%;
     display:flex;align-items:center;gap:10px;
-    margin:30px 0 18px;
+    margin:36px 0 22px;
     color:var(--ink-soft);
-    font-size:11.5px;
+    font-size:13px;
     letter-spacing:.4px;
   }
   .divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--border);}
@@ -182,27 +164,29 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:10px;
-    padding:15px 18px;
-    border-radius:16px;
+    gap:12px;
+    padding:18px 22px;
+    border-radius:18px;
     background:linear-gradient(135deg, var(--green), var(--green-deep));
     color:#fff;
     text-decoration:none;
     font-weight:600;
-    font-size:15px;
+    font-size:17.5px;
     box-shadow:0 10px 24px -10px color-mix(in srgb, var(--green) 70%, transparent);
   }
-  .cta svg{width:19px;height:19px;}
+  .cta svg{width:22px;height:22px;}
 
   footer{
-    margin-top:34px;
+    margin-top:40px;
     text-align:center;
     color:var(--ink-soft);
-    font-size:11.5px;
-    line-height:1.7;
+    font-size:13.5px;
+    line-height:1.8;
   }
   footer .brand{color:var(--green);font-weight:600;}
 </style>
+</head>
+<body>
 
 <div class="wrap" dir="rtl">
   <div class="leafmark">
@@ -267,3 +251,5 @@
     © 2026 NutriBox. كل الحقوق محفوظة
   </footer>
 </div>
+</body>
+</html>
